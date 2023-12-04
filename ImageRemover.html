@@ -13,8 +13,11 @@
         <div class="file-input">
           <label for="fileInput">Select JPG or PNG for Remove Background</label>
           <input id="fileInput" type="file" required />
-          <button type="submit" class="submit-button">Remove BG</button>
+          <button onclick="handleSubmit()" type="button" class="submit-button">
+            Remove BG
+          </button>
         </div>
+        <img class="image-result" src="" alt="" />
       </form>
     </div>
 

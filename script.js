@@ -1,44 +1,32 @@
 const SubmitButton = document.querySelector(".submit-button");
-console.log(SubmitButton);
 const InputFile = document.querySelector("#fileInput");
-console.log(InputFile);
+const ImageResult = document.querySelector(".image-result");
 
-const url = "https://sdk.photoroom.com/v1/segment";
-let apiKey = "4135aa13cc5a184b0547e0c1c668b077d1446fef";
+const url = "https://api.remove.bg/v1.0/removebg";
+const api_key = "1x2dYJRkn9nBszAiNz9TgcQN";
 
-let pressed = false;
+async function handleSubmit() {
+  const image = InputFile.files[0];
+  const formData = new FormData();
+  formData.append("image_file", image);
+  formData.append("size", "auto");
 
-const handleSubmit = async () => {
-  if (pressed === true) {
-    SubmitButton.disable = true;
-    return;
-  }
-  pressed = true;
-  //now user have pressed the button so before submit we need to ensure that the user selected file
-  if (!InputFile.file || InputFile.files.length === 0) {
-    alert("please select a file");
-    return;
-  }
-
-  // now after we are checking the user has enter a file or not then we need to make a request to remove background
-  let options = {
+  await fetch(url, {
     method: "POST",
     headers: {
-      Accept: "image/png, application/json",
-      "x-api-key": "4135aa13cc5a184b0547e0c1c668b077d1446fef",
+      "X-Api-key": api_key,
     },
     body: formData,
-  };
-
-  const format = InputFile.files[0].name.split(".");
-
-  const formData = new FormData();
-  formData.append("image_file", InputFile.files[0]);
-  formData.append("format", format[format.length - 1]);
-
-  const response = await fetch(url, options);
-  let data = await response.json();
-  console.log(data);
-};
-
-SubmitButton.addEventListener("click", handleSubmit);
+  })
+    .then(function (response) {
+      return response.blob();
+    })
+    .then(function (blob) {
+      console.log(blob);
+      const imageURl = URL.createObjectURL(blob);
+      const NewImage = document.createElement("img");
+      NewImage.src = imageURl;
+      document.body.appendChild(NewImage);
+    })
+    .catch();
+}
