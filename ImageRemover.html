@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Remover.css" />
     <title>Bg Remover - Remover</title>
   </head>
   <body>
@@ -13,11 +13,15 @@
         <div class="file-input">
           <label for="fileInput">Select JPG or PNG for Remove Background</label>
           <input id="fileInput" type="file" required />
+          <div id="loader"></div>
           <button onclick="handleSubmit()" type="button" class="submit-button">
             Remove BG
           </button>
+          <div class="result-div">
+            <img class="image-result" src="" alt="" />
+            <button id="download-button" type="button">Download Image</button>
+          </div>
         </div>
-        <img class="image-result" src="" alt="" />
       </form>
     </div>
 

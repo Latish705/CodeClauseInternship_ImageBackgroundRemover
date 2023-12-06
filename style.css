@@ -1,53 +1,118 @@
-.file-input {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-banner {
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-body {
-  font-family: "Arial", sans-serif;
-  background-color: #f0f0f0;
+#main-banner nav {
+  height: 10vh;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #1d3557;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
+  padding: 5px 20px;
 }
 
-div {
-  background-color: #fff;
+#main-banner nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#main-banner nav ul li {
+  padding: 0 50px;
+  font-size: 25px;
+  font-weight: 800;
+  list-style: none;
+}
+
+#main-banner nav ul li a {
+  text-decoration: none;
+  color: #f1faee;
+}
+#main-banner nav a img {
+  height: 8vh;
+}
+
+#banner {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+  padding: 0 40px;
+  background-color: #fefae0;
+}
+
+#banner #banner-text h1 {
+  color: #1d3557;
+  text-decoration: none;
+
+  font-size: 70px;
+}
+#banner #banner-text p {
+  font-size: 25px;
+  padding: 20px 0;
+  font-weight: 600;
+  /* display: inline-block; */
+  /* align-items: center; */
+}
+
+#banner #banner-text p span {
+  border-bottom: 5px solid;
+}
+
+#banner #demo-video {
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 8px solid;
+  border-radius: 40px;
+}
+#banner #demo-video video {
+  height: 500px;
+  border-radius: 40px;
 }
 
-h1 {
-  text-align: center;
-  color: #333;
-}
-
-.file-input {
-  text-align: center;
-  margin-top: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-#fileInput {
-}
-
-.submit-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+#banner #banner-text a button {
+  background-color: #1d3557;
+  color: #f1faee;
+  padding: 15px 20px;
+  font-size: 30px;
+  font-weight: 400;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  border-radius: 15px;
+  transition: 0.3s ease;
+  margin: 40px 0;
 }
 
-.submit-button:hover {
-  background-color: #0056b3;
+#banner #banner-text a button:hover {
+  cursor: pointer;
+  padding: 20px 30px;
+}
+
+#section-2 {
+  display: flex;
+  flex-direction: row;
+  background-color: #fefae0;
+  border: 3px solid;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+#section-2 #text-div p {
+  width: 500px;
+}
+
+#section-2 img {
+  height: 500px;
+  border-radius: 40px;
 }
