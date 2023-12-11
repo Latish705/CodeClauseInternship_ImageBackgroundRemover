@@ -7,24 +7,43 @@
     <title>Bg Remover - Remover</title>
   </head>
   <body>
-    <div>
-      <h1>Background Remover</h1>
-      <form id="bgRemoverForm">
-        <div class="file-input">
-          <label for="fileInput">Select JPG or PNG for Remove Background</label>
-          <input id="fileInput" type="file" required />
-          <div id="loader"></div>
-          <button onclick="handleSubmit()" type="button" class="submit-button">
-            Remove BG
-          </button>
-          <div class="result-div">
-            <img class="image-result" src="" alt="" />
-            <button id="download-button" type="button">Download Image</button>
+    <section id="main-banner">
+      <nav>
+        <a href="./index.html"><img src="./assets/bhnew.png" alt="" /></a>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./ImageRemover.html">Remover</a></li>
+          <li><a href="">About Us</a></li>
+        </ul>
+      </nav>
+    </section>
+    <div class="body">
+      <div class="main-div">
+        <h1>Background Remover</h1>
+        <form id="bgRemoverForm">
+          <div class="file-input">
+            <label for="fileInput"
+              >Select JPG or PNG for Remove Background</label
+            >
+            <input id="fileInput" type="file" required />
+            <div id="loader"></div>
+            <button
+              onclick="handleSubmit()"
+              type="button"
+              class="submit-button"
+            >
+              Remove BG
+            </button>
+            <div class="result-div">
+              <img class="image-result" src="" alt="" />
+              <button id="download-button" class="submit-button" type="button">
+                Download Image
+              </button>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
-
     <script src="./script.js"></script>
   </body>
 </html>

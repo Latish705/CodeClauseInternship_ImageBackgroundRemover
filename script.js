@@ -33,7 +33,9 @@ async function handleSubmit() {
       });
 
       if (response.ok) {
-        document.querySelector(".result-div").style.display = "block";
+        document.querySelector(".result-div").style.display = "flex";
+        document.querySelector(".result-div").style.flexDirection = "column";
+
         const blob = await response.blob();
         const imageUrl = URL.createObjectURL(blob);
 
