@@ -9,6 +9,87 @@
   flex-direction: column;
 }
 
+/* Body Styles */
+.body {
+  background-color: #fefae0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.body h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Form Styles */
+.main-div {
+  background-color: #fefae0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Moved margin-top here for consistency */
+}
+
+.file-input {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#fileInput {
+  padding: 10px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Loader Styles */
+#loader {
+  display: none;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #007bff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+#content {
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Result Styles */
+.result-div {
+  display: none;
+}
+
 #main-banner nav {
   height: 10vh;
   display: flex;
@@ -121,4 +202,193 @@ label {
 
 .result-div {
   display: none;
+}
+/* Media Queries for responsiveness */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #main-banner nav ul li {
+    padding: 0 15px;
+    font-size: 18px;
+  }
+
+  #main-banner nav a img {
+    height: 6vh;
+  }
+
+  .body h1 {
+    font-size: 24px;
+  }
+
+  .main-div {
+    padding: 15px;
+  }
+
+  .file-input {
+    margin-top: 15px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  #fileInput {
+    padding: 8px;
+  }
+
+  .submit-button {
+    padding: 8px 15px;
+    font-size: 16px;
+  }
+
+  #loader {
+    width: 40px;
+    height: 40px;
+    margin: 15px auto;
+  }
+
+  .result-div {
+    padding: 15px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #main-banner nav ul li {
+    padding: 0 20px;
+    font-size: 20px;
+  }
+
+  #main-banner nav a img {
+    height: 7vh;
+  }
+
+  .body h1 {
+    font-size: 28px;
+  }
+
+  .main-div {
+    padding: 20px;
+  }
+
+  .file-input {
+    margin-top: 20px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  #fileInput {
+    padding: 10px;
+  }
+
+  .submit-button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  #loader {
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+  }
+
+  .result-div {
+    padding: 20px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #main-banner nav ul li {
+    padding: 0 30px;
+    font-size: 22px;
+  }
+
+  #main-banner nav a img {
+    height: 8vh;
+  }
+
+  .body h1 {
+    font-size: 32px;
+  }
+
+  .main-div {
+    padding: 25px;
+  }
+
+  .file-input {
+    margin-top: 25px;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  #fileInput {
+    padding: 12px;
+  }
+
+  .submit-button {
+    padding: 12px 25px;
+    font-size: 20px;
+  }
+
+  #loader {
+    width: 60px;
+    height: 60px;
+    margin: 25px auto;
+  }
+
+  .result-div {
+    padding: 25px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #main-banner nav ul li {
+    padding: 0 40px;
+    font-size: 25px;
+  }
+
+  #main-banner nav a img {
+    height: 10vh;
+  }
+
+  .body h1 {
+    font-size: 36px;
+  }
+
+  .main-div {
+    padding: 30px;
+  }
+
+  .file-input {
+    margin-top: 30px;
+  }
+
+  label {
+    font-size: 22px;
+  }
+
+  #fileInput {
+    padding: 15px;
+  }
+
+  .submit-button {
+    padding: 15px 30px;
+    font-size: 22px;
+  }
+
+  #loader {
+    width: 70px;
+    height: 70px;
+    margin: 30px auto;
+  }
+
+  .result-div {
+    padding: 30px;
+  }
 }

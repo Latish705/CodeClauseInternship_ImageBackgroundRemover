@@ -174,3 +174,200 @@
   color: #333;
   cursor: pointer;
 } */
+/* Media Queries for responsiveness */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #main-banner nav ul li {
+    padding: 0 20px;
+    font-size: 20px;
+  }
+
+  #main-banner nav a img {
+    height: 6vh;
+  }
+
+  #banner {
+    padding: 0 20px;
+  }
+
+  #banner #banner-text h1 {
+    font-size: 40px;
+  }
+
+  #banner #banner-text p {
+    font-size: 18px;
+  }
+
+  #banner #demo-video {
+    padding: 15px;
+  }
+
+  #banner #demo-video video {
+    height: 300px;
+  }
+
+  #banner #banner-text a button {
+    font-size: 20px;
+  }
+
+  #section-2 {
+    padding: 0 20px;
+  }
+
+  #section-2 #text-div p {
+    width: 100%;
+  }
+
+  #section-2 img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #main-banner nav ul li {
+    padding: 0 30px;
+    font-size: 22px;
+  }
+
+  #main-banner nav a img {
+    height: 7vh;
+  }
+
+  #banner {
+    padding: 0 30px;
+  }
+
+  #banner #banner-text h1 {
+    font-size: 50px;
+  }
+
+  #banner #banner-text p {
+    font-size: 20px;
+  }
+
+  #banner #demo-video {
+    padding: 18px;
+  }
+
+  #banner #demo-video video {
+    height: 400px;
+  }
+
+  #banner #banner-text a button {
+    font-size: 24px;
+  }
+
+  #section-2 {
+    padding: 0 30px;
+  }
+
+  #section-2 #text-div p {
+    width: 80%;
+  }
+
+  #section-2 img {
+    height: auto;
+    width: 80%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #main-banner nav ul li {
+    padding: 0 40px;
+    font-size: 25px;
+  }
+
+  #main-banner nav a img {
+    height: 8vh;
+  }
+
+  #banner {
+    padding: 0 40px;
+  }
+
+  #banner #banner-text h1 {
+    font-size: 70px;
+  }
+
+  #banner #banner-text p {
+    font-size: 25px;
+  }
+
+  #banner #demo-video {
+    padding: 20px;
+  }
+
+  #banner #demo-video video {
+    height: 500px;
+  }
+
+  #banner #banner-text a button {
+    font-size: 30px;
+  }
+
+  #section-2 {
+    padding: 0 40px;
+  }
+
+  #section-2 #text-div p {
+    width: 60%;
+  }
+
+  #section-2 img {
+    height: auto;
+    width: 60%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #main-banner nav ul li {
+    padding: 0 50px;
+    font-size: 30px;
+  }
+
+  #main-banner nav a img {
+    height: 10vh;
+  }
+
+  #banner {
+    padding: 0 50px;
+  }
+
+  #banner #banner-text h1 {
+    font-size: 80px;
+  }
+
+  #banner #banner-text p {
+    font-size: 30px;
+  }
+
+  #banner #demo-video {
+    padding: 25px;
+  }
+
+  #banner #demo-video video {
+    height: 600px;
+  }
+
+  #banner #banner-text a button {
+    font-size: 36px;
+  }
+
+  #section-2 {
+    padding: 0 50px;
+  }
+
+  #section-2 #text-div p {
+    width: 50%;
+  }
+
+  #section-2 img {
+    height: auto;
+    width: 50%;
+  }
+}
